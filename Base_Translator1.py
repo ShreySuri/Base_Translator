@@ -1,7 +1,7 @@
 import math
 
 base = 13
-clock = 84739
+num_original = 
 
 
 
@@ -9,7 +9,6 @@ parts_list = []
 index_list = []
 append_count = 0
 counter = 0
-num_original = clock
 
 while num_original != 0:
     place_val = 0
@@ -50,6 +49,46 @@ for i in range (0, new_digits):
         index_list[i] = "e"
     elif index_list[i] == 15:
         index_list[i] = "f"
+    elif index_list[i] == 16:
+        index_list[i] = "g"
+    elif index_list[i] == 17:
+        index_list[i] = "h"
+    elif index_list[i] == 18:
+        index_list[i] = "i"
+    elif index_list[i] == 19:
+        index_list[i] = "j"
+    elif index_list[i] == 20:
+        index_list[i] = "k"
+    elif index_list[i] == 21:
+        index_list[i] = "l"
+    elif index_list[i] == 22:
+        index_list[i] = "m"
+    elif index_list[i] == 23:
+        index_list[i] = "n"
+    elif index_list[i] == 24:
+        index_list[i] = "o"
+    elif index_list[i] == 25:
+        index_list[i] = "p"
+    elif index_list[i] == 26:
+        index_list[i] = "q"
+    elif index_list[i] == 27:
+        index_list[i] = "r"
+    elif index_list[i] == 28:
+        index_list[i] = "s"
+    elif index_list[i] == 29:
+        index_list[i] = "t"
+    elif index_list[i] == 30:
+        index_list[i] = "u"
+    elif index_list[i] == 31:
+        index_list[i] = "v"
+    elif index_list[i] == 32:
+        index_list[i] = "w"
+    elif index_list[i] == 33:
+        index_list[i] = "x"
+    elif index_list[i] == 34:
+        index_list[i] = "y"
+    elif index_list[i] == 35:
+        index_list[i] = "z"
     else:
         index_list[i] = str(index_list[i])
                    
