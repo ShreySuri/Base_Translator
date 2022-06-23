@@ -1,7 +1,18 @@
 import math
 
-base = 13
-num_original = 
+base = 0.5
+while base % 1 != 0 or base < 2 or base > 36:
+    base = input(print("Please choose an integer base from 2 - 36, inclusive. "))
+    base = float(base)
+base = int(base)
+
+
+                 
+num_original = 0.5
+while num_original % 1 != 0 or  num_original < 1:
+     num_original = input(print("Please choose a positive integer to convert to base %s. " % base))
+     num_original = float(num_original)
+num_original = int(num_original)
 
 
 
