@@ -107,7 +107,27 @@ for i in range (0, new_digits):
         index_list[i] = str(index_list[i])
                    
 
+new_num = "".join(index_list)
+print(new_num)
 
+library = input(print("If you would like a map of each character's value, type 'map'. If not, type anything else. "))
+library = library.lower()
+
+if library == "map":
+    for i in range (0, base):
+        x = char_list[i]
+        used_char_list.append(x)
+        
+    print("Character --> Value")
+
+    for i in range(0, base):   
+        x = used_char_list[i]
+        print("%s --> %s" % (x, i))
+    print("")
+    print("Thank You for using this program")
+else:
+    print("Thank You for using this program")
+    
 
 
 
