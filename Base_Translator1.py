@@ -20,7 +20,8 @@ parts_list = []
 index_list = []
 append_count = 0
 counter = 0
-char_list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m" 
+char_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+used_char_list = []
 
 while num_original != 0:
     place_val = 0
@@ -108,8 +109,18 @@ new_num = "".join(index_list)
 print(new_num)
 
 library = input(print("If you would like a map of each character's value, type 'map'. If not, type anything else. "))
+library = library.lower()
 
-if library = 
+if library == "map":
+    print("Character --> Value")
+    for i in range(0, 36):
+        x = char_list[i]
+        print("%s --> %s" % (x, i))
+    print("")
+    print("Thank You for using this program")
+else:
+    print("Thank You for using this program")
+    
 
 
 
