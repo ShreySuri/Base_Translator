@@ -34,6 +34,7 @@ while num_original != 0:
     append_count = append_count + 1
     num_original = num_original - part
 
+
 leading_val = parts_list[0]
 digits = math.log(leading_val, base)
 new_digits = int(digits + 1)
@@ -105,27 +106,7 @@ for i in range (0, new_digits):
     else:
         index_list[i] = str(index_list[i])
                    
-new_num = "".join(index_list)
-print(new_num)
 
-library = input(print("If you would like a map of each character's value, type 'map'. If not, type anything else. "))
-library = library.lower()
-
-if library == "map":
-    for i in range (0, base):
-        x = char_list[i]
-        used_char_list.append(x)
-        
-    print("Character --> Value")
-
-    for i in range(0, base):   
-        x = used_char_list[i]
-        print("%s --> %s" % (x, i))
-    print("")
-    print("Thank You for using this program")
-else:
-    print("Thank You for using this program")
-    
 
 
 
