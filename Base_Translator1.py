@@ -112,9 +112,14 @@ library = input(print("If you would like a map of each character's value, type '
 library = library.lower()
 
 if library == "map":
-    print("Character --> Value")
-    for i in range(0, 36):
+    for i in range (0, base):
         x = char_list[i]
+        used_char_list.append(x)
+        
+    print("Character --> Value")
+
+    for i in range(0, base):   
+        x = used_char_list[i]
         print("%s --> %s" % (x, i))
     print("")
     print("Thank You for using this program")
